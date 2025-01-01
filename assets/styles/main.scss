@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #09d7c3;
+  --white: #fff;
+  --black: #000;
+  --js-gutter-x: 40px;
+  --radius-sm: 10px;
+  --radius-md: 26px;
+  --radius-lg: 30px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 2.54453vw;
+
+  @media screen and (min-width: 576px) {
+    font-size: 1.0226vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2196vw;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 0.88vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 0.6226vw;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 0.520833vw;
+  }
+}
+
+p {
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: "Poppins", serif !important;
+}
+
+.secondary-font {
+  font-family: "Libre Bodoni", serif !important;
+}
+
+.container {
+  @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[992px] xl:max-w-[132.03rem];
+}
+
+.header-btn {
+  @apply font-semibold rounded-md bg-[var(--primary-color)] py-[.9rem] px-[3rem] lg:py-[1.4rem] lg:px-[4rem] text-white text-[1.6rem] flex justify-center items-center;
+}
+
+header {
+  transition: all 0.3s ease;
+
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+
+  .brand {
+    img {
+      transition: all 0.3s ease;
+      will-change: opacity;
+    }
+  }
+
+  .logo-black {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &.scrolled {
+    background-color: #fff;
+    .nav-link {
+      @apply text-black;
+    }
+
+    .brand {
+      .logo-white {
+        opacity: 0;
+      }
+      .logo-black {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.home-stagger-elm {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.stagger-elm {
+  opacity: 0;
+  transform: translateY(35px);
+}

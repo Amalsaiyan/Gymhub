@@ -1,13 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- gogle font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- gogle font  -->
+
+  <!-- syles  -->
+
+  <link rel="stylesheet" href="dist/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- syles  -->
+
+  <title>GYMHUB</title>
 </head>
-<body>
-    <h1>
-        hai
-    </h1>
+
+<body class="bg-[#0E1918]">
+  <header class="fixed top-0 z-50 w-full h-[60px] lg:h-[9rem] flex items-center bg-[#0E1918]">
+    <div class="container">
+      <nav class="flex items-center">
+        <a href="/" class="flex brand lg-max:max-w-[13.7rem] relative items-center">
+          <img src="assets/images/logo.svg" class="logo-white" alt="" />
+          <img src="assets/images/logo-black.svg" class="logo-black" alt="" />
+        </a>
+        <div class="flex items-center ml-auto">
+          <div class="mr-[7rem] hidden lg:block">
+            <a href=""
+              class="lg:text-[1.6rem] nav-link text-white lg:px-[1.5rem] lg:py-[.5rem] lg:mx-[.5rem] xxxl:mx-[1.5rem] relative after:content-[''] after:w-[calc(100%-3rem)] after:absolute after:h-[1px] after:left-1/2 after:-translate-x-1/2 after:translate-y-[3px] after:bottom-0 after:bg-white after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition-all after:duration-300">Home</a>
+            <a href=""
+              class="lg:text-[1.6rem] nav-link text-white lg:px-[1.5rem] lg:py-[.5rem] lg:mx-[.5rem] xxxl:mx-[1.5rem] relative after:content-[''] after:w-[calc(100%-3rem)] after:absolute after:h-[1px] after:left-1/2 after:-translate-x-1/2 after:translate-y-[3px] after:bottom-0 after:bg-white after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition-all after:duration-300">About
+              us</a>
+            <a href=""
+              class="lg:text-[1.6rem] nav-link text-white lg:px-[1.5rem] lg:py-[.5rem] lg:mx-[.5rem] xxxl:mx-[1.5rem] relative after:content-[''] after:w-[calc(100%-3rem)] after:absolute after:h-[1px] after:left-1/2 after:-translate-x-1/2 after:translate-y-[3px] after:bottom-0 after:bg-white after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition-all after:duration-300">Programs</a>
+            <a href=""
+              class="lg:text-[1.6rem] nav-link text-white lg:px-[1.5rem] lg:py-[.5rem] lg:mx-[.5rem] xxxl:mx-[1.5rem] relative after:content-[''] after:w-[calc(100%-3rem)] after:absolute after:h-[1px] after:left-1/2 after:-translate-x-1/2 after:translate-y-[3px] after:bottom-0 after:bg-white after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition-all after:duration-300">Why
+              GYMHUB</a>
+            <a href=""
+              class="lg:text-[1.6rem] nav-link text-white lg:px-[1.5rem] lg:py-[.5rem] lg:mx-[.5rem] xxxl:mx-[1.5rem] relative after:content-[''] after:w-[calc(100%-3rem)] after:absolute after:h-[1px] after:left-1/2 after:-translate-x-1/2 after:translate-y-[3px] after:bottom-0 after:bg-white after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition-all after:duration-300">Our
+              Classes</a>
+            <a href=""
+              class="lg:text-[1.6rem] nav-link text-white lg:px-[1.5rem] lg:py-[.5rem] lg:mx-[.5rem] xxxl:mx-[1.5rem] relative after:content-[''] after:w-[calc(100%-3rem)] after:absolute after:h-[1px] after:left-1/2 after:-translate-x-1/2 after:translate-y-[3px] after:bottom-0 after:bg-white after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition-all after:duration-300">Pricing</a>
+            <a href=""
+              class="lg:text-[1.6rem] nav-link text-white lg:px-[1.5rem] lg:py-[.5rem] lg:mx-[.5rem] xxxl:mx-[1.5rem] relative after:content-[''] after:w-[calc(100%-3rem)] after:absolute after:h-[1px] after:left-1/2 after:-translate-x-1/2 after:translate-y-[3px] after:bottom-0 after:bg-white after:opacity-0 hover:after:translate-y-0 hover:after:opacity-100 after:transition-all after:duration-300">Trainers</a>
+          </div>
+          <a href="" class="header-btn group">
+            <div class="relative overflow-hidden">
+              <span class="block group-hover:-translate-y-full transition-all duration-500">Join Us</span>
+              <span
+                class="block absolute top-0 left-0 translate-y-full group-hover:translate-y-0 transition-all duration-500">Join
+                Us</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="min-h-screen mt-[60px] lg:mt-0">
+    <!-- home banner  -->
+    <section class="relative w-full pt-[3.3rem] pb-[2rem] md:py-[9rem] lg:py-0 lg:min-h-screen flex items-center home-banner overflow-hidden">
+      <div class="container">
+        <div class="flex flex-col items-start">
+          <h1
+            class="home-stagger-elm leading-[1.3] text-white text-[2.5rem] md:text-[4rem] lg:text-[6.8rem] font-semibold font-secondory md:max-w-[40rem] lg:max-w-[55rem] xs:max-w-[20rem]">
+            Helps for your ideal body fitness
+          </h1>
+          <p
+            class="home-stagger-elm text-white text-[1.2rem] lg:text-[2.2rem] leading-[1.65] font-medium lg:max-w-[63rem] mt-[1.4rem] lg:mt-[3.4rem] xs:tracking-[.04rem] max-w-[30rem]">
+            Motivate users with benefits and positive reinforcement, and offer
+            modification and progress tracking
+          </p>
+          <div class="flex items-center mt-[8px] md:mt-[1.6rem] lg:mt-[5.4rem]">
+            <a href="" class="home-stagger-elm header-btn group">
+              <div class="relative overflow-hidden">
+                <span class="block group-hover:-translate-y-full transition-all duration-500">Join Us</span>
+                <span
+                  class="block absolute top-0 left-0 translate-y-full group-hover:translate-y-0 transition-all duration-500">Join
+                  Us</span>
+              </div>
+            </a>
+
+            <div class="home-stagger-elm ml-[1rem] lg:ml-[3rem] flex items-center cursor-pointer group">
+              <div
+                class="w-[1.8rem] h-[1.8rem] md:w-[4rem] md:h-[4rem]  flex justify-center items-center bg-[#13655D] lg-max:p-[6px] rounded-full mr-[1rem]">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.50004 9.00033L0.833374 17.667L0.833374 0.333658L9.50004 9.00033Z" fill="white" />
+                </svg>
+              </div>
+              <p class="text-[10px] md:text-[1.6rem] text-white font-medium transition-all duration-300 relative after:content-[attr(data-title)] after:absolute after:left-0 after:top-0 after:w-full after:blur-[3px] after:text-white after:trasition-all after:duration-[500ms] after:will-change-transform after:opacity-0 group-hover:after:opacity-100" data-title="Watch Video">Watch Video</p>
+            </div>
+          </div>
+          <!-- counter  -->
+          <div class="flex home-stagger-elm justify-center space-x-[6px] md:space-x-[1rem] lg:space-x-[3rem] mt-[1.5rem] lg:mt-[5.6rem]">
+            <div class="flex flex-col items-center">
+              <p class="text-[12px] lg:text-[3rem] font-semibold text-white">2500+</p>
+              <p class="text-[8px] md:text-[1.4rem] lg:text-[1.6rem] lg:mt-[1.5rem] text-white">
+                Member Joined
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-[12px] lg:text-[3rem] font-semibold text-white">110</p>
+              <p class="text-[8px] md:text-[1.4rem] lg:text-[1.6rem] lg:mt-[1.5rem] text-white">
+                Expert Trainers
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="text-[12px] lg:text-[3rem] font-semibold text-white">500+</p>
+              <p class="text-[8px] md:text-[1.4rem] lg:text-[1.6rem] lg:mt-[1.5rem] text-white">
+                Fitness Program
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute w-full h-full top-0 left-0 z-[-1] home-banner-bg scale-[1.1] filter blur-[3px]">
+        <img src="assets/images/banner-img.jpg" class="w-full h-full object-cover hidden md:block" alt="" />
+        <img src="assets/images/banner-img-mb.png" class="w-full h-full object-cover md:hidden" alt="" />
+      </div>
+    </section>
+
+    <!-- home-about  -->
+
+    <section class="py-[3rem] lg:py-[10.1rem] bg-[#25272B] ">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row lg:mx-[-9.5rem]">
+          <div class="lg:px-[9.5rem] lg:w-[44.5%] order-2 lg:order-1 mt-[2.5rem] lg:mt-0">
+            <h2
+              class="stagger-elm font-secondory hidden lg:block text-white  text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.2] lg:mb-[3.5rem]">
+              About Us
+            </h2>
+            <p
+              class="stagger-elm text-[14px] md:text-[1.6rem] lg:text-[1.8rem] text-white xs:tracking-[.07rem] leading-[1.5] lg:leading-[1.65]">
+              At GYMHUB, we believe that fitness is not just about lifting
+              weights – it's about lifting your lifestyle. Our
+              state-of-the-art facility is designed to inspire and empower
+              individuals of all fitness levels to achieve their personal
+              best. Whether you're a seasoned athlete or just starting your
+              fitness journey, we offer a welcoming environment, expert
+              trainers, and a diverse range of classes and equipment to help
+              you succeed. At the heart of GYMHUB, we foster a supportive
+              community where goals are met, and every achievement is
+              celebrated. Join us, and let's make fitness a lifelong passion
+              together!
+            </p>
+          </div>
+          <h2 class="stagger-elm font-secondory lg:hidden text-white  text-[2rem] md:text-[3rem leading-[1.2] mb-[3.5rem]">
+            About Us
+          </h2>
+          <div class="lg:px-[9.5rem] stagger-elm lg:w-[55.5%] relative order-1 lg:order-2">
+            <div
+              class="parallx aspect-[668/446] w-[84%] lg:w-full ml-auto border border-[#09D7C3] overflow-hidden rounded-[10px]">
+              <img src="assets/images/about-1.png" class="w-full h-full" alt="" />
+            </div>
+            <div
+              class="parallx absolute left-0 lg:left-[-5rem] w-[62%]  lg:max-w-[49.7rem] lg:w-full top-1/2 -translate-y-1/2 overflow-hidden">
+              <div class="aspect-[497/356] border border-[#09D7C3] overflow-hidden rounded-[10px]">
+                <img src="assets/images/about-2.png" class="w-full h-full" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home-offer  -->
+    <section class=" py-[4rem] md:py-[5.3rem]">
+      <div class="container">
+        <div class="max-w-[71.5rem] mx-auto flex flex-col items-center justify-center mb-[3.7rem] lg:mb-[6.2rem]">
+          <h2
+            class="stagger-elm text-[2rem] md:text-[3rem lg:text-[4rem] text-white font-bold font-secondory mb-[1.2rem] lg:mb-[2rem] text-center">
+            The Best Programs We Offers For You
+          </h2>
+          <p class="stagger-elm text-[1.5rem] md:text-[1.8rem] lg:text-[2.2rem] text-white text-center font-medium">
+            Motivate users with benefits and positive reinforcement, and offer
+            modification and progress tra
+          </p>
+        </div>
+        <div class="flex flex-wrap mt-[-2rem] lg:mt-0 md:mx-[-1rem]">
+          <div class="w-full  stagger-elm mt-[2rem] lg:mt-0 md:w-1/2 lg:w-1/3 xl:w-1/4 md:px-[1rem]">
+            <a href="#"
+              class="bg-[#353C3C] block group rounded-[10px] overflow-hidden pt-[3.3rem] pr-[2rem] pb-[4rem] pl-[2.6rem] lg:pt-[3.3rem] lg:pr-[3.5rem] lg:pb-[4rem] lg:pl-[2.6rem]">
+              <div class="mb-[5.2rem] lg:mb-[4.8rem]">
+                <div class="w-[6rem] h-[6rem] mb-[2.5rem]">
+                  <img src="assets/images/icon-1.svg" class="w-full h-full" alt="" />
+                </div>
+                <p class="text-[2.4rem] font-secondory text-white mb-[3rem]">
+                  Strength Training
+                </p>
+                <p class="text-[1.6rem] lg:text-[1.8rem] text-white font-medium">
+                  Our Trainer will design that a progressive work plan that
+                  proper achieve gains strength
+                </p>
+              </div>
+              <div>
+                <div href="" class="text-[#09D7C3] flex items-center text-[1.8rem]">
+                  Learn More
+                  <div
+                    class="w-[2.4rem] h-[2.4rem] ml-[7px] group-hover:translate-x-[5px] transition-all duration-300 will-change-transform">
+                    <img src="assets/images/arrow-long.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-full stagger-elm mt-[2rem] lg:mt-0 md:w-1/2 lg:w-1/3 xl:w-1/4 md:px-[1rem]">
+            <a href="#"
+              class="bg-[#353C3C] block group rounded-[10px] overflow-hidden pt-[3.3rem] pr-[2rem] pb-[4rem] pl-[2.6rem] lg:pt-[3.3rem] lg:pr-[3.5rem] lg:pb-[4rem] lg:pl-[2.6rem]">
+              <div class="mb-[5.2rem] lg:mb-[4.8rem]">
+                <div class="w-[6rem] h-[6rem] mb-[2.5rem]">
+                  <img src="assets/images/icon-1.svg" class="w-full h-full" alt="" />
+                </div>
+                <p class="text-[2.4rem] font-secondory text-white mb-[3rem]">
+                  Strength Training
+                </p>
+                <p class="text-[1.6rem] lg:text-[1.8rem] text-white font-medium">
+                  Our Trainer will design that a progressive work plan that
+                  proper achieve gains strength
+                </p>
+              </div>
+              <div>
+                <div href="" class="text-[#09D7C3] flex items-center text-[1.8rem]">
+                  Learn More
+                  <div
+                    class="w-[2.4rem] h-[2.4rem] ml-[7px] group-hover:translate-x-[5px] transition-all duration-300 will-change-transform">
+                    <img src="assets/images/arrow-long.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-full stagger-elm mt-[2rem] lg:mt-0 md:w-1/2 lg:w-1/3 xl:w-1/4 md:px-[1rem]">
+            <a href="#"
+              class="bg-[#353C3C] block group rounded-[10px] overflow-hidden pt-[3.3rem] pr-[2rem] pb-[4rem] pl-[2.6rem] lg:pt-[3.3rem] lg:pr-[3.5rem] lg:pb-[4rem] lg:pl-[2.6rem]">
+              <div class="mb-[5.2rem] lg:mb-[4.8rem]">
+                <div class="w-[6rem] h-[6rem] mb-[2.5rem]">
+                  <img src="assets/images/icon-1.svg" class="w-full h-full" alt="" />
+                </div>
+                <p class="text-[2.4rem] font-secondory text-white mb-[3rem]">
+                  Strength Training
+                </p>
+                <p class="text-[1.6rem] lg:text-[1.8rem] text-white font-medium">
+                  Our Trainer will design that a progressive work plan that
+                  proper achieve gains strength
+                </p>
+              </div>
+              <div>
+                <div href="" class="text-[#09D7C3] flex items-center text-[1.8rem]">
+                  Learn More
+                  <div
+                    class="w-[2.4rem] h-[2.4rem] ml-[7px] group-hover:translate-x-[5px] transition-all duration-300 will-change-transform">
+                    <img src="assets/images/arrow-long.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-full stagger-elm mt-[2rem] lg:mt-0 md:w-1/2 lg:w-1/3 xl:w-1/4 md:px-[1rem]">
+            <a href="#"
+              class="bg-[#353C3C] block group rounded-[10px] overflow-hidden pt-[3.3rem] pr-[2rem] pb-[4rem] pl-[2.6rem] lg:pt-[3.3rem] lg:pr-[3.5rem] lg:pb-[4rem] lg:pl-[2.6rem]">
+              <div class="mb-[5.2rem] lg:mb-[4.8rem]">
+                <div class="w-[6rem] h-[6rem] mb-[2.5rem]">
+                  <img src="assets/images/icon-1.svg" class="w-full h-full" alt="" />
+                </div>
+                <p class="text-[2.4rem] font-secondory text-white mb-[3rem]">
+                  Strength Training
+                </p>
+                <p class="text-[1.6rem] lg:text-[1.8rem] text-white font-medium">
+                  Our Trainer will design that a progressive work plan that
+                  proper achieve gains strength
+                </p>
+              </div>
+              <div>
+                <div href="" class="text-[#09D7C3] flex items-center text-[1.8rem]">
+                  Learn More
+                  <div
+                    class="w-[2.4rem] h-[2.4rem] ml-[7px] group-hover:translate-x-[5px] transition-all duration-300 will-change-transform">
+                    <img src="assets/images/arrow-long.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#0E1918] lg:pt-[5.3rem] lg:pb-[3rem]">
+    <div class="container">
+      <div class="flex flex-col lg:flex-row lg:mx-[-5rem] xxxl:mx-[-6rem]">
+        <!-- col-left -->
+        <div class="flex flex-col lg:w-[43%] xxxl:w-[39%] lg:px-[5rem] xxxl:px-[6rem]">
+          <a href="/" class="flex brand relative items-center">
+            <img src="assets/images/logo.svg" class="logo-white" alt="" />
+          </a>
+          <p class="text-white text-[1.4rem] lg:text-[1.8rem] lg:tracking-[0rem] mt-[2rem] lg:mt-[1.9rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt u
+          </p>
+          <div class="mt-[3rem] lg:mt-[5rem] mb-[5.2rem] lg:mb-0">
+            <p class="text-white font-semibold text-[1.6rem] mb-[2rem] lg:mb-[1.8rem]">
+              FOLLOW US ON!
+            </p>
+            <div class="flex space-x-[1.6rem] lg:space-x-[2.6rem]">
+              <a href="" class="lg-max:w-[2rem] lg-max:h-[2rem] block">
+                <img src="assets/images/fb.svg" alt="" class="w-full h-full" />
+              </a>
+              <a href="" class="lg-max:w-[2rem] lg-max:h-[2rem] block">
+                <img src="assets/images/inst.svg" alt="" class="w-full h-full" />
+              </a>
+              <a href="" class="lg-max:w-[2rem] lg-max:h-[2rem] block">
+                <img src="assets/images/tw.svg" alt="" class="w-full h-full" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-right -->
+        <div class="flex flex-col lg:flex-row lg:w-[57%] xxxl:w-[61%] lg:px-[3rem] xxxl:px-[5rem] lg:mx-[-5rem]">
+          <div class="flex flex-col lg:w-1/3 xl:!w-[29%] lg:px-[3rem] xxxl:px-[5rem]">
+            <span
+              class="block md-max:pl-[10px] mb-[3.5rem] tracking-[.1rem] leading-[1] text-[2.4rem] font-semibold lg:mb-[3.5rem] text-white relative after:content[''] after:absolute after:h-full after:w-[4px] after:left-0 lg:after:left-[-8px] after:top-0 after:bg-[#09D7C3]">Quick
+              Links
+            </span>
+            <div class="flex flex-col lg:space-y-[7px]">
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Home</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">About
+                Us</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Program</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Products</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Pricing</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Trainers</a>
+            </div>
+          </div>
+          <div class="flex mt-[4.5rem] lg:mt-0 flex-col lg:w-1/3 xl:!w-[29%] lg:px-[3rem] xxxl:px-[5rem]">
+            <span
+              class="block md-max:pl-[10px] mb-[3.5rem] tracking-[.1rem] leading-[1] text-[2.4rem] font-semibold lg:mb-[3.5rem] text-white relative after:content[''] after:absolute after:h-full after:w-[4px] after:left-0 lg:after:left-[-8px] after:top-0 after:bg-[#09D7C3]">Categories
+            </span>
+            <div class="flex flex-col lg:space-y-[7px]">
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Home</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">About
+                Us</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Program</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Products</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Pricing</a>
+              <a href=""
+                class="text-[1.6rem] leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1.5rem] lg:py-[6px] hover:text-white">Trainers</a>
+            </div>
+          </div>
+          <div class="flex mt-[4.5rem] lg:mt-0 flex-col lg:w-1/3 xl:!w-[42%] lg:px-[3rem] xxxl:px-[5rem]">
+            <span
+              class="block md-max:pl-[10px] mb-[3.5rem] tracking-[.1rem] leading-[1] text-[2.4rem] font-semibold lg:mb-[3.5rem] text-white relative after:content[''] after:absolute after:h-full after:w-[4px] after:left-0 lg:after:left-[-8px] after:top-0 after:bg-[#09D7C3]">Contacts
+            </span>
+            <div class="flex flex-col lg:space-y-[7px]">
+              <a href="tel:+91480905976"
+                class="text-[1.6rem] flex items-center leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1rem] lg:py-[6px] hover:text-white">
+                <div class="w-[24px] h-[24px] mr-[1.8rem] flex-shrink-0">
+                  <img src="assets/images/dial.svg" alt="" class="w-full h-full">
+                </div>
+                +91480905976
+              </a>
+              <a href="tel:+91480905976"
+                class="text-[1.6rem] flex items-center leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1rem] lg:py-[6px] hover:text-white">
+                <div class="w-[24px] h-[24px] mr-[1.8rem] flex-shrink-0">
+                  <img src="assets/images/wp.svg" alt="" class="w-full h-full">
+                </div>
+                +91480905976
+              </a>
+              <a href="mailto:info@gymhub.com"
+                class="text-[1.6rem] flex items-center leading-[1] text-[#FFFFFFB2] transition-all duration-300 py-[1rem] lg:py-[6px] hover:text-white">
+                <div class="w-[24px] h-[24px] mr-[1.8rem] flex-shrink-0">
+                  <img src="assets/images/dial.svg" alt="" class="w-full h-full">
+                </div>
+                info@gymhub.com
+              </a>
+              <address
+                class="text-[1.6rem] leading-[1.7] lg:leading-[1.5] flex items-start text-[#FFFFFFB2] transition-all duration-300 py-[1rem] lg:py-[6px] hover:text-white">
+                <div class="w-[24px] h-[24px] mr-[1.8rem] flex-shrink-0">
+                  <img src="assets/images/loc.svg" alt="" class="w-full h-full">
+                </div>
+                16768 Street, Horizon Complex Mezzanine Floor, M35 Dubai, United Arab Emirates</a>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- social share  -->
+      <div class="fixed top-[20rem] right-[2.2rem] flex flex-col space-y-[7px]">
+        <a href=""
+          class="lg:w-[4.6rem] lg:h-[4.6rem] h-[3.4rem] w-[3.4rem] p-[9px] flex justify-center items-center bg-[#353C3C]">
+          <img src="assets/images/fb.svg" alt="" class="lg-max:h-[2rem]">
+        </a>
+        <a href=""
+          class="lg:w-[4.6rem] lg:h-[4.6rem] h-[3.4rem] w-[3.4rem] p-[9px] flex justify-center items-center bg-[#353C3C]">
+          <img src="assets/images/inst.svg" alt="" class="lg-max:h-[2rem]">
+        </a>
+        <a href=""
+          class="lg:w-[4.6rem] lg:h-[4.6rem] h-[3.4rem] w-[3.4rem] p-[9px] flex justify-center items-center bg-[#353C3C]">
+          <img src="assets/images/tw.svg" alt="" class="lg-max:h-[2rem]">
+        </a>
+      </div>
+  </footer>
+
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/scrollTrigger.js"></script>
+  <script src="assets/js/scrollTo.js"></script>
+  <script src="assets/js/lenis.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/main.js"></script>
+  
 </body>
+
 </html>

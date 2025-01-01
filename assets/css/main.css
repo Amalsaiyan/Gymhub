@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #09d7c3;
+  --white: #fff;
+  --black: #000;
+  --js-gutter-x: 40px;
+  --radius-sm: 10px;
+  --radius-md: 26px;
+  --radius-lg: 30px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Poppins", serif;
+}
+
+.secondary-font {
+  font-family: "Libre Bodoni", serif;
+}
+
+.container {
+  @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[992px] xl:max-w-[132.03rem];
+}

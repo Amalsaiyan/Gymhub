@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.83.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "css": "postcss assets/styles/main.scss -o dist/styles.css"
+  }
+}
